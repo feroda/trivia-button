@@ -7,7 +7,7 @@ Un'applicazione web è come un programma che usi sul tuo computer, ma invece di 
 
 ## Come funziona?
 
-Un'applicazione web ha due parti principali:
+Un'applicazione web ha **2 parti** principali:
 
 1.  **Front-end:**  è quello che vedi sul tuo schermo. È fatto con linguaggi di programmazione che il tuo browser può leggere, come HTML (che struttura le pagine web), CSS (che le rende belle e colorate), e JavaScript (che rende le pagine interattive).
     
@@ -27,9 +27,13 @@ Ci sono vari tipi di applicazioni web, tra cui:
 4.  **Applicazioni web progressive (PWA):**  Sono un mix tra un sito web normale e un'applicazione per il tuo telefono. Puoi usarle come un sito web, ma hanno alcune funzionalità extra come la possibilità di usarle offline.
     
 
-## Sicurezza
+## Sicurezza crittografia
 
-Le applicazioni web possono essere un bersaglio per le persone cattive che cercano di rubare le informazioni o causare problemi. Gli sviluppatori di applicazioni web devono fare attenzione a proteggere le loro applicazioni da queste minacce.
+Parliamo ora di sicurezza. Per proteggere lo scambio di messaggi tra il tuo smartphone e il backend gli sviluppatori utilizzano la crittografia. In questo modo solo il loro backend che possiede una chiave simile ad una password lunga circa 4000 caratteri può leggere il contenuto dei messaggi.
+
+E sai quando vedi "https" all'inizio dell'URL di un sito web? Quella "s" significa "sicuro" e indica che il sito web sta usando la crittografia per proteggere le tue informazioni mentre viaggiano attraverso Internet.
+
+Ma la crittografia è solo una parte del lavoro. Gli sviluppatori devono essere sempre pronti a difendere il loro sito da persone che cercano di causare problemi. Questo può essere un lavoro complicato, ma è fondamentale per mantenere sicure le tue informazioni.
 
 
 [Architettura di un'applicazione Web pubblicata su Internet](./ArchitetturaWebConNuvoletta.svg)
