@@ -32,4 +32,4 @@ Ci sono vari tipi di applicazioni web, tra cui:
 Le applicazioni web possono essere un bersaglio per le persone cattive che cercano di rubare le informazioni o causare problemi. Gli sviluppatori di applicazioni web devono fare attenzione a proteggere le loro applicazioni da queste minacce.
 
 
-[Architettura di un'applicazione Web pubblicata su Internet](./ArchitetturaWebConNuvoletta.svg)
+![Architettura di un'applicazione Web pubblicata su Internet](./ArchitetturaWebConNuvoletta.svg)
