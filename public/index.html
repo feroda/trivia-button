@@ -1,6 +1,13 @@
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
 <form id="logForm" action="/log" method="POST">
-    <div class="container">
-        <input type="text" id="userName" name="userName" placeholder="Enter your name">
-        <button id="submitButton" type="submit">Press the Button</button>
-    </div>
+  <div class="container">
+    <input type="text" id="userName" name="userName" placeholder="Nome squadra" class="textbox">
+    <button id="submitButton" type="submit" class="button">TAP!</button>
+    <ul id="log" class="action-log"></ul>
+  </div>
 </form>
+
+<script src="script.js"></script>
