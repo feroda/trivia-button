@@ -7,9 +7,17 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true })); // Enable body-parser
 
 const log = [];
+const teams = [];
 
 app.get("/log", (req, res) => {
-  res.json(log);
+  // Invert the array to have the latest entries on top
+  const rlog = log.slice().reverse();
+  const json = {
+    log: rlog,
+    teams: teams,
+  };
+
+  res.json(json);
 });
 
 app.post("/log", (req, res) => {
@@ -20,6 +28,12 @@ app.post("/log", (req, res) => {
     log.length = 0;
   } else {
     const entry = `${userName} ha premuto alle ${timestamp}!`;
+
+    // Add the user to the teams array if not already present
+    if (!teams.includes(userName)) {
+      teams.push(userName);
+    }
+
     log.push(entry);
   }
 
