@@ -62,7 +62,7 @@ body {
 
   width: 100%;
   padding: 20px;
-  max-height: 25vh;
+  max-height: 30vh;
   box-sizing: border-box;
 
   line-height: 48px;
@@ -70,4 +70,23 @@ body {
 
   overflow-y: scroll;
   list-style: none;
+}
+
+/* Device width 1440px and above */
+@media (min-width: 1440px) {
+  .textbox {
+    font-size: 3rem;
+  }
+
+  .button {
+    width: 100%;
+    height: 15vw;
+    font-size: 3rem;
+    padding: 2rem;
+  }
+
+  .action-log {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
