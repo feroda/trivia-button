@@ -9,6 +9,11 @@ app.use(bodyParser.urlencoded({ extended: true })); // Enable body-parser
 const log = [];
 const teams = [];
 
+app.get("/tappers", (req, res) => {
+  // Return html file
+  return res.sendFile(__dirname + "/public/tappers.html");
+});
+
 app.get("/log", (req, res) => {
   // Invert the array to have the latest entries on top
   const rlog = log.slice().reverse();
