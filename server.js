@@ -25,9 +25,11 @@ app.post("/log", (req, res) => {
   const timestamp = new Date().toLocaleTimeString("en-US", { hour12: false });
 
   if (userName === "admin") {
+    // Clean the log and the teams array
     log.length = 0;
+    teams.length = 0;
   } else {
-    const entry = `${userName} ha premuto alle ${timestamp}!`;
+    const entry = `${userName} ha premuto alle ${timestamp}`;
 
     // Add the user to the teams array if not already present
     if (!teams.includes(userName)) {
