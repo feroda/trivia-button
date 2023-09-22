@@ -14,9 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // Get logs
         data = data["log"];
 
-        // Retrive only the last 10 entries
-        data = data.slice(-10);
-
         // Add each entry to the list
         data.forEach((entry) => {
           const listItem = document.createElement("li");
