@@ -11,11 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((data) => {
         logList.innerHTML = ""; // Clear the existing list
 
+        // Get logs
+        data = data["log"];
+
         // Retrive only the last 10 entries
         data = data.slice(-10);
-
-        // Invert the order of the entries
-        data.reverse();
 
         // Add each entry to the list
         data.forEach((entry) => {
