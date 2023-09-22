@@ -24,6 +24,10 @@ body {
   text-align: center;
 }
 
+.textbox:read-only {
+  color: grey;
+}
+
 .textbox.error {
   border-color: red;
   color: red;
