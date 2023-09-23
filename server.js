@@ -27,7 +27,8 @@ app.get("/log", (req, res) => {
 
 app.post("/log", (req, res) => {
   const userName = req.query.userName || "Anonymous";
-  const timestamp = new Date().toLocaleTimeString("en-US", { hour12: false });
+  const options = { timeZone: "Europe/Rome", hour12: false };
+  const timestamp = new Date().toLocaleTimeString("it-IT", options);
 
   if (userName === "admin") {
     // Clean the log and the teams array
